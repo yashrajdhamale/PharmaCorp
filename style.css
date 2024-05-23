@@ -1,0 +1,210 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header */
+header {
+    background: #333;
+    color: #fff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #77aaff 3px solid;
+}
+
+header h1 {
+    margin: 0;
+    text-align: center;
+}
+
+header nav {
+    text-align: center;
+    margin-top: 10px;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    padding: 10px;
+}
+
+header ul {
+    padding: 0;
+    list-style: none;
+}
+
+header li {
+    display: inline;
+    padding: 0 20px;
+}
+
+/* Hero Section */
+.hero-section {
+    background: #77aaff;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero-section h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    font-size: 20px;
+}
+
+/* Sections */
+.about-section,
+.services-section,
+.products-section,
+.contact-section {
+    padding: 60px 0;
+    text-align: center;
+    background: #fff;
+    margin-bottom: 20px;
+}
+
+.about-section h2,
+.services-section h2,
+.products-section h2,
+.contact-section h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.about-section p,
+.contact-section p {
+    font-size: 18px;
+}
+
+/* Services Section */
+.services-section ul,
+.products-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.services-section li,
+.products-section li {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* Product Items */
+.product-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.product-item img {
+    max-width: 100px;
+    margin-right: 20px;
+}
+
+.product-item div {
+    flex: 1;
+}
+
+.product-item h3 {
+    margin: 0 0 10px 0;
+    font-size: 22px;
+}
+
+.product-item p {
+    margin: 0;
+}
+
+/* Search Box */
+.search-box {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.search-box input {
+    padding: 10px;
+    font-size: 18px;
+    width: 80%;
+    max-width: 400px;
+}
+
+/* Scrollable List */
+.scrollable-list {
+    max-height: 400px;
+    overflow-y: auto;
+    margin-top: 20px;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header ul {
+        text-align: center;
+        padding: 0;
+    }
+
+    header li {
+        display: block;
+        padding: 10px 0;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    .hero-section {
+        padding: 50px 0;
+    }
+
+    .hero-section h2 {
+        font-size: 30px;
+    }
+
+    .hero-section p {
+        font-size: 18px;
+    }
+
+    .product-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .product-item img {
+        margin-bottom: 10px;
+        max-width: 100%;
+    }
+
+    .search-box input {
+        width: 90%;
+    }
+}
